@@ -13,7 +13,7 @@ public class BinarySearch {
         int hi=nums.length-1;
         int mid = (int) Math.floor((lo+hi)/2);
         while(lo<=hi){
-            System.out.println(" lo, hi , mid "+String.valueOf(lo)+"_"+String.valueOf(hi)+"_"+String.valueOf(mid));
+           // System.out.println(" lo, hi , mid "+String.valueOf(lo)+"_"+String.valueOf(hi)+"_"+String.valueOf(mid));
             mid = (int) Math.floor((lo+hi)/2);
             if(target>nums[mid]){
                 //move right
