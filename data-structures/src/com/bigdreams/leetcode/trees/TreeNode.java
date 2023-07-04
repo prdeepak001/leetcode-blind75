@@ -1,11 +1,11 @@
 package com.bigdreams.leetcode.trees;
 
 public class TreeNode<T> {
-    T data;
-    TreeNode<T>leftNode;
-    TreeNode<T>rightNode;
+    int data;
+    TreeNode<Integer>leftNode;
+    TreeNode<Integer>rightNode;
 
-    public TreeNode(T data) {
+    public TreeNode(int data) {
         this.data = data;
     }
 }
