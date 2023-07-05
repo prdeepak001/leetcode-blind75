@@ -18,21 +18,11 @@ public class TreeMain {
 
     private static void invertTree(BinarySearchTree binarySearchTree) {
       //  depthSearch(binarySearchTree.root,"R");
-        invertTree(binarySearchTree.root);
+        LC_226_InvertBinarySearchTree.invertTree(binarySearchTree.root);
+        LC_110_BalancedTree.height(binarySearchTree.root);
     }
 
-    private static TreeNode invertTree(TreeNode<Integer> root) {
-        if(root==null){
-            System.out.println("root is null");
-            return null;
-        }else{  TreeNode tmp = root.leftNode;
-                root.leftNode=root.rightNode;
-                root.rightNode=tmp;
-                invertTree(root.leftNode);
-                invertTree(root.rightNode);
-                return root;
-        }
-    }
+
     //depth search demo
     private static TreeNode depthSearch(TreeNode<Integer> root,String direction) {
         if(root==null){
