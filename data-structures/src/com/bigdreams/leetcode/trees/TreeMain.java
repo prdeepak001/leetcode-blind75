@@ -13,32 +13,17 @@ public class TreeMain {
         binarySearchTree.insertNode( new TreeNode(6));
         binarySearchTree.insertNode( new TreeNode(1));
         binarySearchTree.displayTree();
-        invertTree(binarySearchTree);
+        doOperation(binarySearchTree);
     }
 
-    private static void invertTree(BinarySearchTree binarySearchTree) {
+    private static void doOperation(BinarySearchTree binarySearchTree) {
       //  depthSearch(binarySearchTree.root,"R");
-        LC_226_InvertBinarySearchTree.invertTree(binarySearchTree.root);
-        LC_110_BalancedTree.height(binarySearchTree.root);
+      //  LC_226_InvertBinarySearchTree.invertTree(binarySearchTree.root);
+    //    LC_110_BalancedTree.height(binarySearchTree.root);
+        System.out.println("Answer" + LC_104_MaxDepthBinaryTree.maxDepth(binarySearchTree.root));
     }
 
 
     //depth search demo
-    private static TreeNode depthSearch(TreeNode<Integer> root,String direction) {
-        if(root==null){
-            System.out.println("root is null");
-            return null;
-        }else{
-            if(direction.equalsIgnoreCase("L")){
-                System.out.println("lefNode "+root.data);
-                TreeNode leftNode = depthSearch(root.leftNode,direction);
-                return leftNode;
-            }else {
-                System.out.println("rightNode "+root.data);
-                TreeNode rightNode = depthSearch(root.rightNode,direction);
-                return rightNode;
-            }
 
-        }
-    }
 }

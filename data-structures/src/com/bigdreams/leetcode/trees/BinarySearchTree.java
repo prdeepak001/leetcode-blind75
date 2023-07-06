@@ -13,10 +13,10 @@ public class BinarySearchTree {
             return root;
         }
         if(node.data<root.data){
-            root.leftNode = insertNodeHelper(root.leftNode,node);
+            root.left = insertNodeHelper(root.left,node);
         }
         if(node.data>root.data){
-            root.rightNode = insertNodeHelper(root.rightNode,node);
+            root.right = insertNodeHelper(root.right,node);
         }
 //        System.out.println(root.data+"_"+node.data);
         return root;
@@ -28,9 +28,9 @@ public class BinarySearchTree {
 
     private void displayTreeHelper(TreeNode<Integer> root) {
         if(root!=null){
-            displayTreeHelper(root.leftNode);
+            displayTreeHelper(root.left);
             System.out.println(root.data);
-            displayTreeHelper(root.rightNode);
+            displayTreeHelper(root.right);
         }
     }
 
