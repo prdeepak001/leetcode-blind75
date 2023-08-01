@@ -17,10 +17,16 @@ public class TreeMain {
     }
 
     private static void doOperation(BinarySearchTree binarySearchTree) {
-      //  depthSearch(binarySearchTree.root,"R");
-      //  LC_226_InvertBinarySearchTree.invertTree(binarySearchTree.root);
-    //    LC_110_BalancedTree.height(binarySearchTree.root);
-        System.out.println("Answer" + LC_104_MaxDepthBinaryTree.maxDepth(binarySearchTree.root));
+        //  depthSearch(binarySearchTree.root,"R");
+        //  LC_226_InvertBinarySearchTree.invertTree(binarySearchTree.root);
+        //  LC_110_BalancedTree.height(binarySearchTree.root);
+        //  System.out.println("Answer" + LC_104_MaxDepthBinaryTree.maxDepth(binarySearchTree.root));
+        System.out.println("");
+        InOrderTraversal.printInorder(binarySearchTree.root);
+        System.out.println("");
+        PostOrderTraversal.printPostorder(binarySearchTree.root);
+        System.out.println("");
+        PreOrderTraversal.printPreorder(binarySearchTree.root);
     }
 
 
